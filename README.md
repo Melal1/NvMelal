@@ -1,1 +1,1 @@
-# this is dependet nvim conf repo {was on dotfile}
+# this is dependent nvim conf repo {was on dotfile}
