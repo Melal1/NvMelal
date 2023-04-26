@@ -92,7 +92,7 @@ dash.setup({
 				desc = "Themes",
 				desc_hl = "String",
 				key = "g",
-				action = ":luafile ~/.config/nvim/lua/Melal/plugins/MelalthemeSw.lua",
+				action = ":luafile ~/.config/nvim/lua/Melal/custom/Myplugins/telescope/ThemeSwitcher/themepick.lua",
 			},
 			{
 				icon = " ",
