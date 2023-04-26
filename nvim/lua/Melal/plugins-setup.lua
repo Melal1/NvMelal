@@ -27,6 +27,7 @@ local plugins = {
 	-- Dependencies
 	"nvim-lua/popup.nvim",
 	"nvim-lua/plenary.nvim",
+	"nvim-telescope/telescope-ui-select.nvim",
 
 	-- Color Schemes and icons
 	-- Schemes
@@ -51,6 +52,7 @@ local plugins = {
 	-- fuzzy finding w/ telescope
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- dependency for better sorting performance
 	{ "nvim-telescope/telescope.nvim", tag = "0.1.1" }, -- fuzzy finder
+	-- "nvim-telescope/telescope-media-files.nvim",
 
 	-- autocompletion
 	"hrsh7th/nvim-cmp", -- completion plugin
@@ -131,6 +133,17 @@ local plugins = {
 	"andweeb/presence.nvim",
 	-- Project
 	"ahmedkhalf/project.nvim",
+	-- Bookmarks
+	"kkharji/sqlite.lua", -- Deb to get Bookmarks works with firefox
+	"dhruvmanila/browser-bookmarks.nvim",
+	-- zoxide
+	"jvgrootveld/telescope-zoxide",
+	-- Telescope repo
+	"cljoly/telescope-repo.nvim",
+	-- command pallate
+	"LinArcX/telescope-command-palette.nvim",
+	-- file browser telescope
+	"nvim-telescope/telescope-file-browser.nvim",
 }
 local opts = {}
 

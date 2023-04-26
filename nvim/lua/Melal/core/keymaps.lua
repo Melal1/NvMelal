@@ -37,8 +37,8 @@ key.set("n", "<C-Down>", ":resize +2<CR>", opts)
 key.set("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 key.set("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 -- Nvim-tree
-key.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-key.set("n", "<leader>fn", ":NvimTreeFocus<CR>", opts)
+key.set("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+key.set("n", "<leader>e", ":NvimTreeFocus<CR>", opts)
 
 -- Telescope
 key.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<CR>", opts)
@@ -67,4 +67,10 @@ key.set("i", "<C-b>", "<ESC>bi")
 -- key.set("i", "<C-k>", "<ESC>ki")
 
 -- Theme switcher
-key.set("n", "<leader>th", "<cmd>luafile ~/.config/nvim/lua/Melal/plugins/MelalthemeSw.lua<CR>")
+key.set(
+	"n",
+	"<leader>th",
+	"<cmd>luafile ~/.config/nvim/lua/Melal/custom/Myplugins/telescope/ThemeSwitcher/themepick.lua<CR>"
+)
+-- cd to current
+key.set("n", "<leader>cd", "<cmd>:lcd %:p:h<CR>")
