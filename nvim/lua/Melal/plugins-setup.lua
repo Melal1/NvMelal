@@ -23,11 +23,12 @@ local plugins = {
 	"Mofiqul/adwaita.nvim",
 	{ "decaycs/decay.nvim", name = "decay" },
 	"nyoom-engineering/oxocarbon.nvim",
+	"rebelot/kanagawa.nvim",
 	"morhetz/gruvbox",
 	-- Icons
 	"nvim-tree/nvim-web-devicons", -- vs code icons
-	"rebelot/kanagawa.nvim",
 	"norcalli/nvim-colorizer.lua",
+	------------------------------------
 	-- Nvim tree
 	"nvim-tree/nvim-tree.lua",
 
@@ -37,7 +38,7 @@ local plugins = {
 
 	-- fuzzy finding w/ telescope
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- dependency for better sorting performance
-	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" }, -- fuzzy finder
+	{ "nvim-telescope/telescope.nvim", tag = "0.1.1" }, -- fuzzy finder
 
 	-- autocompletion
 	"hrsh7th/nvim-cmp", -- completion plugin
@@ -111,8 +112,9 @@ local plugins = {
 	"akinsho/bufferline.nvim",
 
 	-- my theme switcher
-	"Melal1/nvim-theme-switcher",
-
+	-- "Melal1/nvim-theme-switcher",
+	-- Telescope extension maker
+	-- "adoyle-h/telescope-extension-maker.nvim",
 	-- Discoed Status
 	"andweeb/presence.nvim",
 	-- Project
