@@ -10,7 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
-local Mypl = "/home/melal/repos/NvMelal/nvim/lua/Melal/custom/Myplugins"
+local Mypl = "/home/melal/.config/nvim/lua/Melal/custom/Myplugins"
 if not vim.loop.fs_stat(Mypl) then
 	vim.fn.system({
 		"git",
