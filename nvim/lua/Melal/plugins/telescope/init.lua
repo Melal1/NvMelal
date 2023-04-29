@@ -119,12 +119,11 @@ require("telescope").load_extension("repo")
 
 local M = {}
 
-function M.repo_list()
+function M.find_repos()
 	local opts = {}
 	opts.prompt_title = " Repos"
 	require("telescope").extensions.repo.list(opts)
 end
-
 M.project_files = function()
 	local _, ret, stderr = utils.get_os_command_output({
 		"git",
@@ -136,7 +135,7 @@ M.project_files = function()
 	local fopts = {}
 
 	gopts.prompt_title = " Find"
-	gopts.prompt_prefix = "  "
+	gopts.prompt_prefix = "   "
 	gopts.results_title = " Repo Files"
 
 	fopts.hidden = true
@@ -166,7 +165,7 @@ function M.grep_notes()
 	opts.search_dirs = {
 		"~/notes/",
 	}
-	opts.prompt_prefix = "   "
+	opts.prompt_prefix = "    "
 	opts.prompt_title = " Grep Notes"
 	opts.path_display = { "smart" }
 	require("telescope.builtin").live_grep(opts)
@@ -185,28 +184,32 @@ end
 function M.browse_notes()
 	require("telescope").extensions.file_browser.file_browser({
 		prompt_title = " Browse Notes",
-		prompt_prefix = " ﮷ ",
+		prompt_prefix = " ﮷  ",
 		cwd = "~/notes/",
 		layout_strategy = "horizontal",
 		layout_config = { preview_width = 0.65, width = 0.75 },
 	})
 end
 
--- function M.find_configs()
---   require("telescope.builtin").find_files {
---     prompt_title = " NVim & Term Config Find",
---     results_title = "Config Files Results",
---     path_display = { "smart" },
---     search_dirs = {
---       "~/.oh-my-zsh/custom",
---       "~/.config/nvim",
---       "~/.config/alacritty",
---     },
---     -- cwd = "~/.config/nvim/",
---     layout_strategy = "horizontal",
---     layout_config = { preview_width = 0.65, width = 0.75 },
---   }
--- end
+function M.find_configs()
+	require("telescope.builtin").find_files({
+
+		prompt_title = " NVim & Term Config Find",
+		results_title = "Config Files Results",
+		path_display = { "smart" },
+		search_dirs = {
+			"~/.config/ZSH/core/",
+			"~/.config/nvim",
+			"~/.config/kitty/",
+			"~/.config/neofetch/",
+		},
+
+		file_ignore_patterns = { "~/.config/ZSH/plugins/" },
+		-- cwd = "~/.config/nvim/",
+		layout_strategy = "horizontal",
+		layout_config = { preview_width = 0.65, width = 0.75 },
+	})
+end
 
 function M.nvim_config()
 	require("telescope").extensions.file_browser.file_browser({

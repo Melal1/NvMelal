@@ -1,4 +1,5 @@
 require("Melal.plugins-setup")
+require("Melal.plugins.dashboard")
 require("Melal.core.colorscheme")
 require("Melal.plugins.term")
 require("Melal.core.options")
@@ -18,5 +19,5 @@ require("Melal.plugins.gitsigns")
 require("Melal.plugins.autopairs")
 require("Melal.plugins.colorizer")
 require("Melal.plugins.blankline")
-require("Melal.plugins.dashboard")
 require("Melal.plugins.bufferline")
+-- السلام عليكم ورحمة الله وبركاته

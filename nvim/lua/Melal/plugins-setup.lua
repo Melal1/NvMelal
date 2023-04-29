@@ -31,6 +31,7 @@ local plugins = {
 
 	-- Color Schemes and icons
 	-- Schemes
+	"nyoom-engineering/oxocarbon.nvim",
 	"lunarvim/darkplus.nvim",
 	"Mofiqul/vscode.nvim",
 	"Mofiqul/adwaita.nvim",
