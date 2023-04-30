@@ -117,6 +117,8 @@ require("telescope").load_extension("zoxide")
 
 require("telescope").load_extension("repo")
 
+require("telescope").load_extension("persisted")
+
 local M = {}
 
 function M.find_repos()

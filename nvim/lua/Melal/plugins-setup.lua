@@ -145,6 +145,11 @@ local plugins = {
 	"LinArcX/telescope-command-palette.nvim",
 	-- file browser telescope
 	"nvim-telescope/telescope-file-browser.nvim",
+	-- Session manager
+	{
+		"olimorris/persisted.nvim",
+		config = true,
+	},
 }
 local opts = {}
 
