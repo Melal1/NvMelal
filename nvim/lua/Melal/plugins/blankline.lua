@@ -1,6 +1,6 @@
 local Status, blackline = pcall(require, "indent_blankline")
 if not Status then
-	print("blackline")
+	vim.notify("blackline")
 	return
 end
 

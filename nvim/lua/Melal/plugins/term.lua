@@ -1,12 +1,12 @@
 local St, toggleterm = pcall(require, "toggleterm")
 if not St then
-	print("toggleterm is not installed or error")
+	vim.notify("toggleterm is not installed or error")
 	return
 end
 -- Melal: require with a protected call the variables file
 local Vst, MyVar = pcall(require, "Melal.core.var")
 if not Vst then
-	print("M")
+	vim.notify("M")
 else
 	require("Melal.core.var")
 end

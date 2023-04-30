@@ -1,6 +1,6 @@
 local status, autopairs = pcall(require, "nvim-autopairs")
 if not status then
-	print("autopairs is not installed or not working")
+	vim.notify("autopairs is not installed or not working")
 	return
 end
 

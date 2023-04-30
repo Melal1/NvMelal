@@ -12,7 +12,7 @@ end
 
 local lspkind_status, lspkind = pcall(require, "lspkind")
 if not lspkind_status then
-	print(" lspkind is not working or not installed")
+	vim.notify(" lspkind is not working or not installed")
 	return
 end
 

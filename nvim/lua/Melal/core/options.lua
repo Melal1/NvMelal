@@ -72,5 +72,12 @@ o.undofile = true
 o.updatetime = 250
 --\\ Words format //--
 
-o.formatoptions:remove("cro") -- -=
 o.iskeyword:append({ "-", "+" })
+
+-- notifyer
+local st, noti = pcall(require, "notify")
+if not st then
+	vim.notify("notifyer !")
+	return
+end
+vim.notify = noti

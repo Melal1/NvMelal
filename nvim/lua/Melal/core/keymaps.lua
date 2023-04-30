@@ -100,3 +100,7 @@ key.set("i", "<c-v>", "<c-r>+")
 
 -- source find
 key.set("n", "<leader><leader>", "<cmd>luafile %<CR>")
+-- hop
+key.set("n", "<C-h>", "<cmd>HopPattern<CR>")
+-- Jabs
+key.set("n", "<leader>bf", "<cmd>JABSOpen<CR>")

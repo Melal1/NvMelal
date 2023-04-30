@@ -1,6 +1,6 @@
 local status, dash = pcall(require, "dashboard")
 if not status then
-	print("dashboard is not installed")
+	vim.notify("dashboard is not installed")
 	return
 end
 
@@ -51,22 +51,22 @@ dash.setup({
 				action = "Telescope oldfiles",
 			},
 			{
-				icon = " ",
+				icon = "󰑓 ",
 				icon_hl = "Title",
-				desc = "Find Text",
+				desc = "Load last session",
 				desc_hl = "String",
 				key = "c",
 				-- keymap = "SPC f d",
-				action = "Telescope live_grep",
+				action = ":SessionLoadLast",
 			},
 			{
-				icon = " ",
-				icon_hl = "title",
-				desc = "MyProjects",
-				desc_hl = "string",
+				icon = " ",
+				icon_hl = "Title",
+				desc = "List sessions",
+				desc_hl = "String",
 				key = "d",
-				-- keymap = "spc f d",
-				action = ":Telescope projects",
+				-- keymap = "SPC f d",
+				action = ":Telescope persisted",
 			},
 			{
 				icon = " ",
@@ -78,13 +78,13 @@ dash.setup({
 				action = ":edit ~/.dotfiles/hypr/.config/hypr/",
 			},
 			{
-				icon = " ",
-				icon_hl = "Title",
-				desc = "Lazygit",
-				desc_hl = "String",
+				icon = " ",
+				icon_hl = "title",
+				desc = "MyProjects",
+				desc_hl = "string",
 				key = "f",
-				-- keymap = "SPC f d",
-				action = ":lua Allgit_toggle()",
+				-- keymap = "spc f d",
+				action = ":Telescope projects",
 			},
 			{
 				icon = "󰔎 ",

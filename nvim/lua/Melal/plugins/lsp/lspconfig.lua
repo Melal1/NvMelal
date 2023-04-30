@@ -1,18 +1,18 @@
 local ls_status, lspconfig = pcall(require, "lspconfig")
 if not ls_status then
-	print("lspconfig is not installed or there is an erorr")
+	vim.notify("lspconfig is not installed or there is an erorr")
 	return
 end
 
 local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_nvim_lsp_status then
-	print("cmp_nvim_lsp is not installed or there is an erorr")
+	vim.notify("cmp_nvim_lsp is not installed or there is an erorr")
 	return
 end
 
 local typescript_status, typescript = pcall(require, "typescript")
 if not typescript_status then
-	print("typescript is not installed or there is an erorr")
+	vim.notify("typescript is not installed or there is an erorr")
 	return
 end
 

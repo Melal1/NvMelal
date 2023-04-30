@@ -7,7 +7,7 @@
 -- ---@diagnostic disable-next-line: param-type-mismatch
 -- local colorst, _ = pcall(vim.cmd, "colorscheme " .. color)
 -- if not colorst then
--- 	print("The color scheme " .. color .. " not found , used " .. defcolor .. " instead ~")
+-- 	vim.notify("The color scheme " .. color .. " not found , used " .. defcolor .. " instead ~")
 -- 	return
 -- end
 vim.cmd([[colorscheme oxocarbon]])

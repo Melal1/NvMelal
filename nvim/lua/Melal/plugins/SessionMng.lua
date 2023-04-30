@@ -1,6 +1,6 @@
 local status, MySessionMng = pcall(require, "persisted")
 if not status then
-	return print("persisted is not working"), vim.notify("")
+	return vim.notify("persisted is not working"), vim.notify("")
 end
 
 local MyOptions = {

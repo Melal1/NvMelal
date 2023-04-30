@@ -150,6 +150,15 @@ local plugins = {
 		"olimorris/persisted.nvim",
 		config = true,
 	},
+	-- HOP --{for fast move}
+	{
+		"phaazon/hop.nvim",
+		branch = "v2",
+	},
+	-- Buffer switcher
+	"matbme/JABS.nvim",
+	-- notifyer
+	"rcarriga/nvim-notify",
 }
 local opts = {}
 
