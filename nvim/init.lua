@@ -1,8 +1,11 @@
+-- TODO ead
 require("Melal.plugins-setup")
+require("Melal.core.options")
+-- must be on top to reload before other
+require("Melal.plugins.notifyer")
 require("Melal.plugins.SessionMng")
 require("Melal.core.colorscheme")
 require("Melal.plugins.term")
-require("Melal.core.options")
 require("Melal.core.keymaps")
 require("Melal.plugins.comment")
 require("Melal.plugins.lualine")
@@ -23,3 +26,5 @@ require("Melal.plugins.bufferline")
 require("Melal.plugins.dashboard")
 require("Melal.plugins.hop")
 require("Melal.plugins.bufferswitcher")
+require("Melal.plugins.colorpicker")
+require("Melal.plugins.ToDo")

@@ -104,3 +104,6 @@ key.set("n", "<leader><leader>", "<cmd>luafile %<CR>")
 key.set("n", "<C-h>", "<cmd>HopPattern<CR>")
 -- Jabs
 key.set("n", "<leader>bf", "<cmd>JABSOpen<CR>")
+-- color picker
+key.set("n", "<c-s>", "<cmd>PickColor<cr>", opts)
+key.set("i", "<c-s>", "<cmd>PickColorInsert<cr>", opts)

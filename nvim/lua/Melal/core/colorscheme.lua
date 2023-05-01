@@ -10,4 +10,4 @@
 -- 	vim.notify("The color scheme " .. color .. " not found , used " .. defcolor .. " instead ~")
 -- 	return
 -- end
-vim.cmd([[colorscheme oxocarbon]])
+vim.cmd([[colorscheme gruvbox]])

@@ -23,7 +23,7 @@ if not vim.loop.fs_stat(Mypl) then
 end
 vim.opt.rtp:prepend(Mypl)
 
-local plugins = {
+local NvMelalPL = {
 	-- Dependencies
 	"nvim-lua/popup.nvim",
 	"nvim-lua/plenary.nvim",
@@ -159,7 +159,11 @@ local plugins = {
 	"matbme/JABS.nvim",
 	-- notifyer
 	"rcarriga/nvim-notify",
+	-- color picker
+	"ziontee113/color-picker.nvim",
+	-- T ODO plugin
+	"folke/todo-comments.nvim",
 }
 local opts = {}
 
-require("lazy").setup(plugins, opts)
+require("lazy").setup(NvMelalPL, opts)
