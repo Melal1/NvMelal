@@ -107,3 +107,5 @@ key.set("n", "<leader>bf", "<cmd>JABSOpen<CR>")
 -- color picker
 key.set("n", "<c-s>", "<cmd>PickColor<cr>", opts)
 key.set("i", "<c-s>", "<cmd>PickColorInsert<cr>", opts)
+-- todo
+key.set("n", "<leader>ft", "<cmd>:TodoTelescope keywords=TODO<CR>")

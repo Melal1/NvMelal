@@ -28,6 +28,7 @@ local NvMelalPL = {
 	"nvim-lua/popup.nvim",
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope-ui-select.nvim",
+	"nvim-telescope/telescope-fzy-native.nvim",
 
 	-- Color Schemes and icons
 	-- Schemes
@@ -41,7 +42,7 @@ local NvMelalPL = {
 	"morhetz/gruvbox",
 	-- Icons
 	"nvim-tree/nvim-web-devicons", -- vs code icons
-	"norcalli/nvim-colorizer.lua",
+	"NvChad/nvim-colorizer.lua",
 	------------------------------------
 	-- Nvim tree
 	"nvim-tree/nvim-tree.lua",
