@@ -1,4 +1,3 @@
--- TODO ead
 require("Melal.plugins-setup")
 require("Melal.core.options")
 -- must be on top to reload before other
