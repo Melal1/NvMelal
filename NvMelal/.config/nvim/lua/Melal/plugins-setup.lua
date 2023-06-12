@@ -41,7 +41,7 @@ local NvMelalPL = {
 	"rebelot/kanagawa.nvim",
 	"morhetz/gruvbox",
 	-- Icons
-	"nvim-tree/nvim-web-devicons", -- vs code icons
+	"nvim-tree/nvim-web-devicons", -- some cool icons
 	"NvChad/nvim-colorizer.lua",
 	------------------------------------
 	-- Nvim tree
